@@ -89,6 +89,7 @@ const createAccount: Action = async (event) => {
   }
 
   redirect(
+    event.url.pathname,
     {
       type: 'success',
       message: m.accounts.create.success
