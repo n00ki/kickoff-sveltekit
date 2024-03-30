@@ -1,7 +1,7 @@
 <script lang="ts">
   import { ContextMenu as ContextMenuPrimitive } from 'bits-ui';
-  import { cn } from '$lib/utils/utils';
-  import { Check } from 'radix-icons-svelte';
+  import { cn } from '$lib/utils/utils.js';
+  import Check from 'svelte-radix/Check.svelte';
 
   type $$Props = ContextMenuPrimitive.CheckboxItemProps;
   type $$Events = ContextMenuPrimitive.CheckboxItemEvents;
@@ -14,7 +14,7 @@
 <ContextMenuPrimitive.CheckboxItem
   bind:checked
   class={cn(
-    'relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+    'relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none data-[disabled]:pointer-events-none data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground data-[disabled]:opacity-50',
     className
   )}
   {...$$restProps}

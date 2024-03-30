@@ -12,7 +12,7 @@
   import * as Card from '$components/ui/card';
 
   // Icons
-  import { Reload, GithubLogo, LinkedinLogo } from 'radix-icons-svelte';
+  import { Reload, GithubLogo, LinkedinLogo } from 'svelte-radix';
 
   export let data;
 

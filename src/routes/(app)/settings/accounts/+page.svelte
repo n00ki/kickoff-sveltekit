@@ -16,7 +16,7 @@
   import { Separator } from '$components/ui/separator';
 
   // Icons
-  import { Reload } from 'radix-icons-svelte';
+  import Reload from 'svelte-radix/Reload.svelte';
 
   export let data;
 

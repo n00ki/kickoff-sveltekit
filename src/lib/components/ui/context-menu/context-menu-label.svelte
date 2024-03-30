@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ContextMenu as ContextMenuPrimitive } from 'bits-ui';
-  import { cn } from '$lib/utils/utils';
+  import { cn } from '$lib/utils/utils.js';
 
   type $$Props = ContextMenuPrimitive.LabelProps & {
     inset?: boolean;

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { RangeCalendar as RangeCalendarPrimitive } from 'bits-ui';
-  import { cn } from '$lib/utils/utils';
+  import { cn } from '$lib/utils/utils.js';
 
   type $$Props = RangeCalendarPrimitive.HeaderProps;
 
@@ -9,7 +9,7 @@
 </script>
 
 <RangeCalendarPrimitive.Header
-  class={cn('flex justify-between pt-1 relative items-center w-full', className)}
+  class={cn('relative flex w-full items-center justify-between pt-1', className)}
   {...$$restProps}
 >
   <slot />

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { RangeCalendar as RangeCalendarPrimitive } from 'bits-ui';
-  import { buttonVariants } from '$components/ui/button';
-  import { cn } from '$lib/utils/utils';
+  import { buttonVariants } from '$components/ui/button/index.js';
+  import { cn } from '$lib/utils/utils.js';
 
   type $$Props = RangeCalendarPrimitive.DayProps;
   type $$Events = RangeCalendarPrimitive.DayEvents;
@@ -26,11 +26,11 @@
     // Selection End
     'data-[selection-end]:bg-primary data-[selection-end]:text-primary-foreground data-[selection-end]:hover:bg-primary data-[selection-end]:hover:text-primary-foreground data-[selection-end]:focus:bg-primary data-[selection-end]:focus:text-primary-foreground',
     // Outside months
-    'data-[outside-month]:text-muted-foreground data-[outside-month]:opacity-50 [&[data-outside-month][data-selected]]:bg-accent/50 [&[data-outside-month][data-selected]]:text-muted-foreground [&[data-outside-month][data-selected]]:opacity-30 data-[outside-month]:pointer-events-none',
+    'data-[outside-month]:pointer-events-none data-[outside-month]:text-muted-foreground data-[outside-month]:opacity-50 [&[data-outside-month][data-selected]]:bg-accent/50 [&[data-outside-month][data-selected]]:text-muted-foreground [&[data-outside-month][data-selected]]:opacity-30',
     // Disabled
     'data-[disabled]:text-muted-foreground data-[disabled]:opacity-50',
     // Unavailable
-    'data-[unavailable]:line-through data-[unavailable]:text-destructive-foreground',
+    'data-[unavailable]:text-destructive-foreground data-[unavailable]:line-through',
     className
   )}
   {...$$restProps}

@@ -11,8 +11,7 @@
   import * as Card from '$components/ui/card';
 
   // Icons
-  import { Reload } from 'radix-icons-svelte';
-
+  import Reload from 'svelte-radix/Reload.svelte';
   export let data;
 
   const form = superForm(data.form, {

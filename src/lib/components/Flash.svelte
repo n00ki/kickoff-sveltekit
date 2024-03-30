@@ -3,7 +3,7 @@
   import { fly } from 'svelte/transition';
 
   // Icons
-  import { CheckCircled, ExclamationTriangle, CrossCircled } from 'radix-icons-svelte';
+  import { CheckCircled, ExclamationTriangle, CrossCircled } from 'svelte-radix';
 
   export let type: 'success' | 'error' | 'warning';
   export let message: string;

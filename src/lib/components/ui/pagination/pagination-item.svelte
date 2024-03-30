@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { cn } from '$lib/utils/utils';
+  import { cn } from '$lib/utils/utils.js';
   import type { HTMLAttributes } from 'svelte/elements';
 
   type $$Props = HTMLAttributes<HTMLLIElement>;
-
   let className: $$Props['class'] = undefined;
+
   export { className as class };
 </script>
 

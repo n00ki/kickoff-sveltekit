@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { cn } from '$lib/utils/utils';
-  import { DotsHorizontal } from 'radix-icons-svelte';
+  import { cn } from '$lib/utils/utils.js';
+  import DotsHorizontal from 'svelte-radix/DotsHorizontal.svelte';
   import type { HTMLAttributes } from 'svelte/elements';
 
   type $$Props = HTMLAttributes<HTMLSpanElement>;

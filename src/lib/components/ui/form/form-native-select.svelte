@@ -2,7 +2,7 @@
   import { Form as FormPrimitive } from 'formsnap';
   import { buttonVariants } from '$components/ui/button';
   import { cn } from '$lib/utils/utils';
-  import { CaretSort } from 'radix-icons-svelte';
+  import { CaretSort } from 'svelte-radix';
   import type { HTMLSelectAttributes } from 'svelte/elements';
 
   type $$Props = HTMLSelectAttributes;

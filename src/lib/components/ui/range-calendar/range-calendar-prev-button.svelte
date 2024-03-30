@@ -1,8 +1,8 @@
 <script lang="ts">
   import { RangeCalendar as RangeCalendarPrimitive } from 'bits-ui';
-  import { ChevronLeft } from 'radix-icons-svelte';
-  import { buttonVariants } from '$components/ui/button';
-  import { cn } from '$lib/utils/utils';
+  import ChevronLeft from 'svelte-radix/ChevronLeft.svelte';
+  import { buttonVariants } from '$components/ui/button/index.js';
+  import { cn } from '$lib/utils/utils.js';
 
   type $$Props = RangeCalendarPrimitive.PrevButtonProps;
   type $$Events = RangeCalendarPrimitive.PrevButtonEvents;

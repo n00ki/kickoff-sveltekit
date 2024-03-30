@@ -19,7 +19,7 @@
   import { Separator } from '$components/ui/separator';
 
   // Icons
-  import { Reload, Pencil2 } from 'radix-icons-svelte';
+  import { Reload, Pencil2 } from 'svelte-radix';
 
   export let data;
   let isEditMode = false;
@@ -137,7 +137,7 @@
   <ul class="flex w-full flex-wrap gap-4 pt-2">
     {#each data.account.members as member}
       <li class="flex flex-col items-center justify-center">
-        <Avatar.Root class="ring-border ring-2">
+        <Avatar.Root class="ring-2 ring-border">
           {#if member.user.avatar}
             <Avatar.Image src={`${PUBLIC_AWS_S3_BUCKET_URL}/avatars/${member.user.avatar}`} alt={member.user.email} />
           {/if}

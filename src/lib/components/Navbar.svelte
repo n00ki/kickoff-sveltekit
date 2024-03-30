@@ -6,7 +6,7 @@
   import { Button } from '$components/ui/button';
 
   // Icons
-  import { HamburgerMenu, Exit, Cross1 } from 'radix-icons-svelte';
+  import { HamburgerMenu, Exit, Cross1 } from 'svelte-radix';
 
   export let user: object | null = null;
   let isMenuOpen = false;
@@ -50,7 +50,7 @@
 
   <!-- Mobile Dropdown Menu -->
   {#if isMenuOpen}
-    <div transition:slide class="bg-muted fixed w-full rounded-lg lg:hidden">
+    <div transition:slide class="fixed w-full rounded-lg bg-muted lg:hidden">
       <div class="flex w-full flex-col gap-2 p-4">
         {#if !user}
           <Button href="/login" variant="link" on:click={toggleMenuState} class="text-accent-foreground">Login</Button>

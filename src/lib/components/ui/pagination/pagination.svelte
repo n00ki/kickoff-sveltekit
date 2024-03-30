@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Pagination as PaginationPrimitive } from 'bits-ui';
-  import { cn } from '$lib/utils/utils';
+  import { cn } from '$lib/utils/utils.js';
 
   type $$Props = PaginationPrimitive.Props;
   type $$Events = PaginationPrimitive.Events;
@@ -27,7 +27,7 @@
   asChild
   {...$$restProps}
 >
-  <nav {...builder} class={cn('mx-auto flex flex-col w-full items-center', className)}>
+  <nav {...builder} class={cn('mx-auto flex w-full flex-col items-center', className)}>
     <slot {pages} {range} {currentPage} />
   </nav>
 </PaginationPrimitive.Root>

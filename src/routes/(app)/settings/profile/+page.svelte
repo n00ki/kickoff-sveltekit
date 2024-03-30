@@ -24,7 +24,7 @@
   import avatarPlaceholder from '$lib/assets/avatar.png';
 
   // Icons
-  import { Reload, CrossCircled } from 'radix-icons-svelte';
+  import { Reload, CrossCircled } from 'svelte-radix';
 
   export let data;
 
@@ -141,7 +141,7 @@
 
 <div class="flex w-full flex-1 flex-col justify-center">
   <div
-    class="conic-gradient ring-accent mx-auto my-2 flex h-32 w-32 rounded-full p-1 ring-4 drop-shadow-sm"
+    class="conic-gradient mx-auto my-2 flex h-32 w-32 rounded-full p-1 ring-4 ring-accent drop-shadow-sm"
     style="--progress: {fileUploadProgress};"
   >
     <div class="m-auto flex h-full w-full items-center justify-center overflow-hidden rounded-full">
@@ -161,6 +161,7 @@
           type="file"
           on:change={uploadAvatar}
           disabled={fileUploadStatus === 'uploading'}
+          class="p-1.5 file:text-secondary-foreground"
           {...attrs}
           {...constraints}
         />
