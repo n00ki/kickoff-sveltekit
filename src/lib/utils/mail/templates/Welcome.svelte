@@ -1,5 +1,5 @@
 <script>
-  import { Heading, Hr, Html, Text } from 'svelte-email';
+  import { Heading, Hr, Html, Text } from 'svelty-email';
 </script>
 
 <Html lang="en">

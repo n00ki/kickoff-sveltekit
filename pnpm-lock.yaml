@@ -35,9 +35,6 @@ dependencies:
   pg:
     specifier: ^8.11.3
     version: 8.11.3
-  svelte-email:
-    specifier: ^0.0.4
-    version: 0.0.4
   svelte-radix:
     specifier: ^1.1.0
     version: 1.1.0(svelte@4.2.12)
@@ -47,6 +44,9 @@ dependencies:
   sveltekit-flash-message:
     specifier: ^2.4.4
     version: 2.4.4(@sveltejs/kit@2.5.5)(svelte@4.2.12)
+  svelty-email:
+    specifier: ^0.0.10
+    version: 0.0.10(@sveltejs/kit@2.5.5)
 
 devDependencies:
   '@playwright/test':
@@ -6395,14 +6395,6 @@ packages:
       - sugarss
     dev: true
 
-  /svelte-email@0.0.4:
-    resolution: {integrity: sha512-v3lMKxz6aaNdFstERH5r7BMTrxw0JWTPcc0Gubjcd8l++uyiol53tCk9INfMgMV4EyZy7WFOs24uurt4pxpMjQ==}
-    dependencies:
-      html-to-text: 9.0.5
-      pretty: 2.0.0
-      svelte: 3.59.2
-    dev: false
-
   /svelte-eslint-parser@0.33.1(svelte@4.2.12):
     resolution: {integrity: sha512-vo7xPGTlKBGdLH8T5L64FipvTrqv3OQRx9d2z5X05KKZDlF4rQk8KViZO4flKERY+5BiVdOh7zZ7JGJWo5P0uA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -6557,6 +6549,17 @@ packages:
       - esbuild
       - esbuild-runner
     dev: true
+
+  /svelty-email@0.0.10(@sveltejs/kit@2.5.5):
+    resolution: {integrity: sha512-aIjkP0+DXPW86N0GTFXhrCogcHThHh/5QvNgwLJM8C51EOZcepWgfWJK0zoZjTs4nzsVQwV12/R50I54h99NHQ==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.5.0 || ^2.0.0
+    dependencies:
+      '@sveltejs/kit': 2.5.5(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.12)(vite@5.2.7)
+      html-to-text: 9.0.5
+      pretty: 2.0.0
+      svelte: 3.59.2
+    dev: false
 
   /svgo@3.2.0:
     resolution: {integrity: sha512-4PP6CMW/V7l/GmKRKzsLR8xxjdHTV4IMvhTnpuHwwBazSIlw5W/5SmPjN8Dwyt7lKbSJrRDgp4t9ph0HgChFBQ==}

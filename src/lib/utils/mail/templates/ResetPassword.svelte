@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Heading, Hr, Html, Button } from 'svelte-email';
+  import { Heading, Hr, Html, Button } from 'svelty-email';
   export let url: string;
 </script>
 

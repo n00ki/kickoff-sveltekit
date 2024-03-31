@@ -4,7 +4,7 @@ import { SENDGRID_API_KEY, EMAIL_SENDER } from '$env/static/private';
 // Utils
 import sendgrid from '@sendgrid/mail';
 import { fail } from '@sveltejs/kit';
-import { render } from 'svelte-email';
+import { render } from 'svelty-email';
 
 // Templates
 import WelcomeTemplate from '$lib/utils/mail/templates/Welcome.svelte';

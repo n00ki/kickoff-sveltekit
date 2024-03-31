@@ -67,9 +67,9 @@
     "nanoid": "^5.0.6",
     "oslo": "^1.2.0",
     "pg": "^8.11.3",
-    "svelte-email": "^0.0.4",
     "svelte-radix": "^1.1.0",
     "svelte-sonner": "^0.3.19",
-    "sveltekit-flash-message": "^2.4.4"
+    "sveltekit-flash-message": "^2.4.4",
+    "svelty-email": "^0.0.10"
   }
 }
