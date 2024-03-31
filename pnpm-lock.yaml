@@ -11,9 +11,6 @@ dependencies:
   '@aws-sdk/s3-request-presigner':
     specifier: ^3.540.0
     version: 3.540.0
-  '@internationalized/date':
-    specifier: ^3.5.2
-    version: 3.5.2
   '@lucia-auth/adapter-drizzle':
     specifier: ^1.0.7
     version: 1.0.7(lucia@3.1.1)
@@ -23,15 +20,9 @@ dependencies:
   '@sendgrid/mail':
     specifier: ^8.1.1
     version: 8.1.1
-  cmdk-sv:
-    specifier: ^0.0.17
-    version: 0.0.17(svelte@4.2.12)
   drizzle-orm:
     specifier: ^0.30.6
     version: 0.30.6(@types/pg@8.11.4)(pg@8.11.3)
-  embla-carousel-svelte:
-    specifier: ^8.0.0
-    version: 8.0.0(svelte@4.2.12)
   lucia:
     specifier: ^3.1.1
     version: 3.1.1
@@ -41,9 +32,6 @@ dependencies:
   oslo:
     specifier: ^1.2.0
     version: 1.2.0
-  paneforge:
-    specifier: ^0.0.2
-    version: 0.0.2(svelte@4.2.12)
   pg:
     specifier: ^8.11.3
     version: 8.11.3
@@ -59,9 +47,6 @@ dependencies:
   sveltekit-flash-message:
     specifier: ^2.4.4
     version: 2.4.4(@sveltejs/kit@2.5.5)(svelte@4.2.12)
-  vaul-svelte:
-    specifier: ^0.3.0
-    version: 0.3.0(svelte@4.2.12)
 
 devDependencies:
   '@playwright/test':
@@ -1529,15 +1514,18 @@ packages:
     resolution: {integrity: sha512-PcF++MykgmTj3CIyOQbKA/hDzOAiqI3mhuoN44WRCopIs1sgoDoU4oty4Jtqaj/y3oDU6fnVSm4QG0a3t5i0+g==}
     dependencies:
       '@floating-ui/utils': 0.2.1
+    dev: true
 
   /@floating-ui/dom@1.6.3:
     resolution: {integrity: sha512-RnDthu3mzPlQ31Ss/BTwQ1zjzIhr3lk1gZB1OC56h/1vEtaXkESrOqL5fQVMfXpwGtRwX+YsZBdyHtJMQnkArw==}
     dependencies:
       '@floating-ui/core': 1.6.0
       '@floating-ui/utils': 0.2.1
+    dev: true
 
   /@floating-ui/utils@0.2.1:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
+    dev: true
 
   /@gcornut/valibot-json-schema@0.0.27(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.30.0):
     resolution: {integrity: sha512-xcMaUStVgQzPrK3d7PuLFbQ+3qSp6LzaLExAm52E3FKmUfjQa7Sw5cDK6Hfu/8WT0yfGsuSCuJ5uT1sosjR9Qg==}
@@ -1594,6 +1582,7 @@ packages:
     resolution: {integrity: sha512-vo1yOMUt2hzp63IutEaTUxROdvQg1qlMRsbCvbay2AK2Gai7wIgCyK5weEX3nHkiLgo4qCXHijFNC/ILhlRpOQ==}
     dependencies:
       '@swc/helpers': 0.5.7
+    dev: true
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1663,34 +1652,6 @@ packages:
     dependencies:
       lucia: 3.1.1
       pg: 8.11.3
-    dev: false
-
-  /@melt-ui/svelte@0.61.2(svelte@4.2.12):
-    resolution: {integrity: sha512-BHkD9G31zQBToA4euDRBgTQRvWxT9scufOVCXgDO6HKTvyxFspbWT2bgiSFqAK4BbAGDn9Ao36Q8F9O71KN4OQ==}
-    peerDependencies:
-      svelte: '>=3 <5'
-    dependencies:
-      '@floating-ui/core': 1.6.0
-      '@floating-ui/dom': 1.6.3
-      '@internationalized/date': 3.5.2
-      dequal: 2.0.3
-      focus-trap: 7.5.4
-      nanoid: 4.0.2
-      svelte: 4.2.12
-    dev: false
-
-  /@melt-ui/svelte@0.68.0(svelte@4.2.12):
-    resolution: {integrity: sha512-/QvA98hnYEodZtHJ71+ocum/WWp30hVNt3F8uiZKnNYwZDaiQYjlyR9AaGKYcZLCe6R68op1mfCzc0kTzJilyA==}
-    peerDependencies:
-      svelte: '>=3 <5'
-    dependencies:
-      '@floating-ui/core': 1.6.0
-      '@floating-ui/dom': 1.6.3
-      '@internationalized/date': 3.5.2
-      dequal: 2.0.3
-      focus-trap: 7.5.4
-      nanoid: 5.0.6
-      svelte: 4.2.12
     dev: false
 
   /@melt-ui/svelte@0.76.2(svelte@4.2.12):
@@ -3064,6 +3025,7 @@ packages:
     resolution: {integrity: sha512-BVvNZhx362+l2tSwSuyEUV4h7+jk9raNdoTSdLfwTshXJSaGmYKluGRJznziCI3KX02Z19DdsQrdfrpXAU3Hfg==}
     dependencies:
       tslib: 2.6.2
+    dev: true
 
   /@trysound/sax@0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -3450,17 +3412,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /bits-ui@0.16.0(svelte@4.2.12):
-    resolution: {integrity: sha512-HEkuVDyUG9dTWtKujKpdDsGOe9GRmuYOEF9yGbjVwNazxMQDQa9deUX8vM3ofGBWaJgr1cEu88p38kP5Z5gQ8w==}
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      '@internationalized/date': 3.5.2
-      '@melt-ui/svelte': 0.68.0(svelte@4.2.12)
-      nanoid: 5.0.6
-      svelte: 4.2.12
-    dev: false
-
   /bits-ui@0.21.1(svelte@4.2.12):
     resolution: {integrity: sha512-G6agiFtmbgxV2XQBdsn3tYhZw4b4lETtxU1iTpiNOgMkhUo+oV+XDQA3coMzqKDfAsmfyaLEuYtSM/NiRHGjdw==}
     peerDependencies:
@@ -3471,16 +3422,6 @@ packages:
       nanoid: 5.0.6
       svelte: 4.2.12
     dev: true
-
-  /bits-ui@0.9.9(svelte@4.2.12):
-    resolution: {integrity: sha512-LkdkyTtpXdkjBzPZJVJgpcre4fut6DONoprMfadHFo82HNUhph+02CxDjYEcZcThb5z4YjSxMlCYvQPZm+YtfQ==}
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      '@melt-ui/svelte': 0.61.2(svelte@4.2.12)
-      nanoid: 5.0.6
-      svelte: 4.2.12
-    dev: false
 
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
@@ -3635,16 +3576,6 @@ packages:
     resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
     dev: true
-
-  /cmdk-sv@0.0.17(svelte@4.2.12):
-    resolution: {integrity: sha512-28QTrK1tT1TSNoGq9MVnzjeLNNjCgjmsM8c2HJfDpRt9t+GD+9m3wX/WdAPaP9jdoNYU0SSdZVdgsGgpaSQOYQ==}
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      bits-ui: 0.9.9(svelte@4.2.12)
-      nanoid: 5.0.6
-      svelte: 4.2.12
-    dev: false
 
   /code-red@1.0.4:
     resolution: {integrity: sha512-7qJWqItLA8/VPVlKJlFXU+NBlo/qyfs39aJcuMT/2ere32ZqvF5OSxgdM5xOfJJ7O429gg2HM47y8v9P+9wrNw==}
@@ -4094,28 +4025,6 @@ packages:
     resolution: {integrity: sha512-XzWNH4ZSa9BwVUQSDorPWAUQ5WGuYz7zJUNpNif40zFCiCl20t8zgylmreNmn26h5kiyw2lg7RfTmeMBsDklqg==}
     dev: true
 
-  /embla-carousel-reactive-utils@8.0.0(embla-carousel@8.0.0):
-    resolution: {integrity: sha512-JCw0CqCXI7tbHDRogBb9PoeMLyjEC1vpN0lDOzUjmlfVgtfF+ffLaOK8bVtXVUEbNs/3guGe3NSzA5J5aYzLzw==}
-    peerDependencies:
-      embla-carousel: 8.0.0
-    dependencies:
-      embla-carousel: 8.0.0
-    dev: false
-
-  /embla-carousel-svelte@8.0.0(svelte@4.2.12):
-    resolution: {integrity: sha512-twoIN3jpSZB2Gc7pI2mfN0vjmXgZQbwgQ4T4OUa2OEXBU/jRbevhb9kd2RtqzU2lalB3j2a1lCE5Ey9DQtxr6Q==}
-    peerDependencies:
-      svelte: ^3.49.0 || ^4.0.0
-    dependencies:
-      embla-carousel: 8.0.0
-      embla-carousel-reactive-utils: 8.0.0(embla-carousel@8.0.0)
-      svelte: 4.2.12
-    dev: false
-
-  /embla-carousel@8.0.0:
-    resolution: {integrity: sha512-ecixcyqS6oKD2nh5Nj5MObcgoSILWNI/GtBxkidn5ytFaCCmwVHo2SecksaQZHcARMMpIR2dWOlSIdA1LkZFUA==}
-    dev: false
-
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
@@ -4563,6 +4472,7 @@ packages:
     resolution: {integrity: sha512-N7kHdlgsO/v+iD/dMoJKtsSqs5Dz/dXZVebRgJw23LDk+jMi/974zyiOYDziY2JPp8xivq9BmUGwIJMiuSBi7w==}
     dependencies:
       tabbable: 6.2.0
+    dev: true
 
   /follow-redirects@1.15.6:
     resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
@@ -5266,12 +5176,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  /nanoid@4.0.2:
-    resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
-    engines: {node: ^14 || ^16 || >=18}
-    hasBin: true
-    dev: false
-
   /nanoid@5.0.6:
     resolution: {integrity: sha512-rRq0eMHoGZxlvaFOUdK1Ev83Bd1IgzzR+WJ3IbDJ7QOSdAxYjlurSPqFs9s4lJg29RT6nPwizFtJhQS6V5xgiA==}
     engines: {node: ^18 || >=20}
@@ -5402,15 +5306,6 @@ packages:
 
   /packet-reader@1.0.0:
     resolution: {integrity: sha512-HAKu/fG3HpHFO0AA8WE8q2g+gBJaZ9MG7fcKk+IJPLTGAD6Psw4443l+9DGRbOIh3/aXr7Phy0TjilYivJo5XQ==}
-    dev: false
-
-  /paneforge@0.0.2(svelte@4.2.12):
-    resolution: {integrity: sha512-1xNMq+uslstqum4D8CzzkPGqnTWUlevjYtMjUhuEOiuz7E0fJHFuM8ogk8+LJnVbAg3hMJJ/9Mu4A1KaxK38oQ==}
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      nanoid: 5.0.6
-      svelte: 4.2.12
     dev: false
 
   /parent-module@1.0.1:
@@ -6679,6 +6574,7 @@ packages:
 
   /tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
+    dev: true
 
   /tailwind-merge@2.2.2:
     resolution: {integrity: sha512-tWANXsnmJzgw6mQ07nE3aCDkCK4QdT3ThPMCzawoYA2Pws7vSTCvz3Vrjg61jVUGfFZPJzxEP+NimbcW+EdaDw==}
@@ -6903,15 +6799,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /vaul-svelte@0.3.0(svelte@4.2.12):
-    resolution: {integrity: sha512-+PBfKDWl+xfloe8Tm1G8x3TqbCiUWoyUedU2WC5iE3v6LOYPKo8FyEtzNC5ZqFVVnUKSKNg+4Fi73nuzMkT7JA==}
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      bits-ui: 0.16.0(svelte@4.2.12)
-      svelte: 4.2.12
-    dev: false
 
   /vite-node@1.4.0:
     resolution: {integrity: sha512-VZDAseqjrHgNd4Kh8icYHWzTKSCZMhia7GyHfhtzLW33fZlG9SwsB6CEhgyVOWkJfJ2pFLrp/Gj1FSfAiqH9Lw==}
