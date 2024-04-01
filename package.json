@@ -66,9 +66,9 @@
     "lucia": "^3.1.1",
     "nanoid": "^5.0.6",
     "oslo": "^1.2.0",
-    "pg": "^8.11.3",
+    "pg": "^8.11.4",
     "svelte-radix": "^1.1.0",
-    "svelte-sonner": "^0.3.19",
+    "svelte-sonner": "^0.3.20",
     "sveltekit-flash-message": "^2.4.4",
     "svelty-email": "^0.0.10"
   }
