@@ -13,7 +13,7 @@ module.exports = {
     es2017: true,
     node: true
   },
-  ignorePatterns: ['*.cjs'],
+  ignorePatterns: ['*.cjs', 'src/lib/components/ui/**/*.svelte'],
   overrides: [
     {
       files: ['*.svelte'],

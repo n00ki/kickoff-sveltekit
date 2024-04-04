@@ -1,8 +1,6 @@
 <script lang="ts">
   // Stores
   import { page } from '$app/stores';
-  import { browser } from '$app/environment';
-  import { jsStatus } from '$lib/stores/js_status';
 
   // Utils
   import { onNavigate, disableScrollHandling } from '$app/navigation';
@@ -25,10 +23,6 @@
     clearAfterMs: 3000,
     clearArray: true
   });
-
-  if (browser) {
-    $jsStatus = 'enabled';
-  }
 
   // Disable scroll handling on same route navigation for theme switching
   onNavigate((navigation) => {
